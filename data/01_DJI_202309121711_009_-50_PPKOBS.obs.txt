@@ -1,27 +1,4 @@
-% program   : TeoboxBot ver. 4.6.4
-% timemarks : 1036
-% inp file  : ROVER_1_DJI_202309121711_009_-50_PPKOBS.obs_MRK.obs
-% inp file  : BASE.RNX
-% inp file  : BRDC00IGS_R_20232550000_01D_MN.rnx
-% inp file  : brdc2550.23g
-% inp file  : brdc2550.23n
-% obs start : 2023/09/12 10:13:30.2 GPST (week2279 209610.2s)
-% obs end   : 2023/09/12 10:42:13.4 GPST (week2279 211333.4s)
-% pos mode  : Kinematic
-% freqs     : L1+L2/E5b
-% solution  : Combined-Phase Reset
-% elev mask : 10.0 deg
-% dynamics  : on
-% ionos opt : Broadcast
-% ephemeris : Broadcast
-% navi sys  : GPS GLONASS Galileo BDS
-% ratio     : 5.0
-% PROJ      : +proj=tmerc +lat_0=0 +lon_0=83.7333333 +k=1 +x_0=4250000 +y_0=-5612900 +ellps=krass +towgs84=23.57,-140.95,-79.8,0,-0.35,-0.79,-0.22 +units=m +no_defs
-% geoid src : egm08_25.gtx
-% geoid diff: min_diff = -0.002    max_diff = 0.006    base_diff = -36.383
-% ref pos   : 476550.5544 4198747.8056 128.8528
-% ref dif   : 9.012 -8.292 34.142
-DJI_202309121711_0001.JPG	2023/09/12	10:14:08.519024	476094.996	4198400.997	176.573	1	20	0.0019	0.0013	0.0033	15.1
+DJI_20230912171347_0001_V.JPG	2023/09/12	10:14:08.519024	476094.996	4198400.997	176.573	1	20	0.0019	0.0013	0.0033	15.1
 DJI_202309121711_0002.JPG	2023/09/12	10:14:10.034544	476095.868	4198402.303	176.614	1	20	0.0019	0.0014	0.0035	89.3
 DJI_202309121711_0003.JPG	2023/09/12	10:14:11.529267	476100.221	4198410.196	176.633	1	20	0.0019	0.0013	0.0033	93.3
 DJI_202309121711_0004.JPG	2023/09/12	10:14:13.042060	476105.237	4198419.970	176.756	1	20	0.0019	0.0013	0.0033	100.7

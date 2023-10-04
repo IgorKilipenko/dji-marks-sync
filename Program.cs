@@ -4,19 +4,21 @@ using System.Text.RegularExpressions;
 
 Console.WriteLine("DJI-MARKS-SYNC");
 
-string inputPattern = @"(?<in>\-[iI]\s+(?<inPath>.+))?";
+string inputPattern = @"(?<inMrk>\-[iI]\s+(?<inMrkPath>.+))?";
 
 while (true) {
     var cmd = Console.ReadLine();
     if (cmd == null || cmd == "exit") {
         return;
     }
-    Regex reg = new(@"(?<out>\-[oO]\s+(?<outPath>.+))?" + inputPattern, RegexOptions.CultureInvariant);
+    Regex reg = new(@"(?<imgsDir>\-[dD]\s+(?<imgsDirPath>.+))?" + inputPattern, RegexOptions.CultureInvariant);
     var match = reg.Match(cmd);
-    if (reg.Match(cmd).Success) {
-        Console.WriteLine($"Match: {match.Groups["inPath"].Value}");
-        Parser parser = new();
-        var marks = parser.ParseMrkFile("./data/DJI_202309121711_009_Элитный-ОП50_Timestamp.MRK");
-        Console.WriteLine(marks);
+    if (true /*match.Success*/) {
+        Editor editor = new();
+        //editor.EditTeoboxMrkFile("./data/01_DJI_202309121711_009_-50_PPKOBS.obs.txt", "./data");
+        //editor.EditTeoboxMrkFile(match.Groups["inMrkPath"].Value, match.Groups["inMrkPath"].Value);
+        editor.EditTeoboxMrkFile("F:/YandexDisk/Компьютер DESKTOP-H5HF4NE/ИГОРЬ_ДАР/_ОФП/29.09.2023_АФС_ПЛИТЫ_ЗОРГЕ/_teobox_data/01_DJI_202309291722_014_-50_PPKOBS.obs_GNS_GLONAS_.txt", "F:/YandexDisk/Компьютер DESKTOP-H5HF4NE/ИГОРЬ_ДАР/_ОФП/29.09.2023_АФС_ПЛИТЫ_ЗОРГЕ/_src/2023-09-29_Elit_Doroga viezd (50) a/Фото");
+    } else {
+        System.Diagnostics.Debug.Print("Invalid args");
     }
 }

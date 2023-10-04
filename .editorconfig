@@ -10,6 +10,10 @@ root = true
 indent_size = 4
 indent_style = space
 tab_width = 4
+trim_trailing_whitespace = true
+max_line_length = 80
+
+csharp_max_line_length = 80
 
 # Предпочтения для новых строк
 end_of_line = crlf
